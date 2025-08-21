@@ -1,14 +1,12 @@
 {
-  "name": "Dinesh Reddy-portfolio",
+  "name": "portfolio-dinesh",
   "version": "1.0.0",
  "scripts": {
   "dev": "vite",
   "build": "vite build",
   "preview": "vite preview",
-
-  "postbuild": "shx cp dist/index.html dist/404.html",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+  "deploy": "git subtree push --prefix dist origin gh-pages"
 },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
